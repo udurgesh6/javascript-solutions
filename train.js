@@ -1,14 +1,29 @@
-let str = "hello";
-let arr = str.split("");
-console.log(arr);
-console.log(str[0] === str[0].toLowerCase());
-console.log(arr.join(""));
+// let computer = {
+//   nameOf: "HP",
+//   model: 2012,
+//   shutDown: function () {
+//     return "Will Restart";
+//   },
+//   Address: {
+//     street: "Road No. 10",
+//     Area: "Gachibowli",
+//   },
+//   getAddress: function () {
+//     return this.Address.street + " ," + this.Address.Area;
+//   },
+//   details: ["sw",34, true, {}],
+// };
 
-console.log(parseInt("23"));
+// console.log(computer.details);
 
-if (parseInt("23s")) {
-  console.log(parseInt("23s"));
-  console.log("Number");
-} else {
-  console.log("Nan");
+// obj1 = { a: 1, b: 2 };
+// obj2 = { c: 3 };
+// obj3 = { d: 4, ...obj1, c: 5, ...obj2 };
+// console.log(obj3);
+
+const object = { a: 1, b: 2, c: 3 };
+object["a"] = "jsdh";
+for (const key in object) {
+  //console.log(property);
+  console.log(`${key}: ${object[key]}`);
 }
